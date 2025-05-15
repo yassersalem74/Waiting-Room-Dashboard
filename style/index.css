@@ -57,7 +57,7 @@
 body {
   font-family: "Cairo", sans-serif;
   margin: 0 24px;
-   background-color: #F1F5F8;
+  background-color: #f1f5f8;
 }
 /* header  */
 
@@ -192,7 +192,7 @@ tr:nth-child(even) {
 /* header-two */
 .header-two {
   /* background-color: gainsboro; */
-  margin: 24px 0px;
+  margin: -10px 0px 4px;
   display: flex;
   justify-content: space-between;
 }
@@ -233,21 +233,31 @@ tr:nth-child(even) {
 }
 
 .loading-box .box-text {
-  font-size: 32px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 26px;
+}
+.box-text-number {
+  font-size: 24px;
 }
 
 .users-box {
   width: 146px;
-  height: 52px;
+  height: 82px;
   background-color: transparent;
 }
 
 .users-box .box-text {
   background: var(--blue-color);
-  padding: 0px 12px;
+  padding: 3px 12px;
   border-radius: 4px;
 }
 
+.waiting-number-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .users-box .image-box {
   background-color: transparent;
   width: 40px;
@@ -261,6 +271,13 @@ tr:nth-child(even) {
 .numbers-box {
   display: flex;
   gap: 5px;
+}
+.waiting-number {
+  background-color: var(--blue-color);
+  margin: 2px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px 8px;
 }
 
 .number-text {
@@ -292,6 +309,7 @@ tr:nth-child(even) {
 
 .flex-responsive {
   display: flex;
+  gap: 12px;
 }
 
 @media screen and (max-width: 924px) {
@@ -320,7 +338,7 @@ tr:nth-child(even) {
   padding: 2px 35px 4px 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: rgba(16, 83, 162, 0.14);;
+  background-color: rgba(16, 83, 162, 0.14);
   background-image: url("/images/search.png");
   background-size: 16px;
   background-position: right 10px center;
@@ -334,4 +352,32 @@ tr:nth-child(even) {
 
 .search-input-arabic::placeholder {
   text-align: right;
+}
+
+/* pagination  */
+.pagination-content {
+  display: flex;
+  justify-content: center;
+  margin: 12px 0px;
+}
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: var(--blue-color);
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: var(--partial-approve-color);
+  border-radius: 5px;
 }
