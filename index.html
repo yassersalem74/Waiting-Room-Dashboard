@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Waiting room</title>
+        <link rel="stylesheet" href="/style/index.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cairo:wght@200..1000&display=swap"
+            rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- header  -->
+        <div class="header">
+            <div class="right-side">
+                <div class="img-logo"><img src="/images/logo.png"
+                        alt="logo-image"></div>
+                <div class="right-side-titles blue-color">
+                    <p>شركة تداوي الطبية <span
+                            class="red-color">(فرع)</span></p>
+                    <p>Tadawi Medical <span class="red-color">(Gnp)</span></p>
+                </div>
+            </div>
+
+            <div class="left-side">
+                <p class="time secondary-color" dir="ltr">12:52:30 AM</p>
+                <div class="time-icon blue-color"><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd"
+                            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-two">
+
+            <div class="flex-responsive">
+
+                <div class="box">
+                    <div>
+                        <div class="image-box"><img src="/images/teeth.png"
+                                alt></div>
+                    </div>
+                    <div class="box-text">عياده الاسنان</div>
+                </div>
+
+                <div class="box">
+                    <div>
+                        <div class="image-box"><img src="/images/doctor.png"
+                                alt></div>
+                    </div>
+                    <div class="box-text">عياده الاسنان</div>
+                </div>
+            </div>
+
+            <div class="flex-responsive">
+
+                <div class="box loading-box">
+                    <div>
+                        <div class="image-box"><img src="/images/loading.png"
+                                alt></div>
+                    </div>
+                    <div class="box-text"> 25</div>
+                </div>
+
+                <div class="online-users">
+
+                    <div class="box users-box">
+                        <div class="numbers-box">
+                            <div class="box-text number-text">3</div>
+                            <div class="box-text number-text">8</div>
+                        </div>
+                        <div>
+                            <div class="image-box"><img src="/images/users.png"
+                                    alt></div>
+                        </div>
+                    </div>
+
+                    <div class="open-content">
+                        <div class="open-text">open</div>
+                        <div class="image-box green-circle-box"><img
+                                src="/images/circle.png" alt></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <input type="text" placeholder="بحث" class="search-input">
+
+        <!-- table  -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="line-height number-cell">
+                            <p>رقم الملف</p>
+                            <p> File Number</p>
+                        </th>
+                        <th class="line-height">
+                            <p>رقم الدور</p>
+                            <p>Queue Number</p>
+                        </th>
+                        <th class="line-height">
+                            <p>الحاله</p>
+                            <p>Status</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="row-shadow">
+                        <td class="font-bolder-700">1234567</td>
+                        <td class="font-bolder-700">25</td>
+                        <td>
+                            <div class="status-content">
+                                <div class="status seen  partial-approve">Doctor
+                                    Seen /
+                                    قيد الزياره
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="font-bolder-700">1234567</td>
+                        <td class="font-bolder-700">25</td>
+                        <td>
+                            <div class="status-content">
+                                <div class="status  pending">Waiting/ قيد
+                                    الإنتظار
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="font-bolder-700">1234567</td>
+                        <td class="font-bolder-700">25</td>
+                        <td>
+                            <div class="status-content">
+                                <div class="status  pending">Waiting/ قيد
+                                    الإنتظار
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="danger">
+                        <td class="font-bolder-700">1234567</td>
+                        <td class="font-bolder-700">25</td>
+                        <td>
+                            <div class="status-content danger-content">
+                                <div class="status  pending">Waiting/ قيد
+                                    الإنتظار
+                                </div>
+                                <div class="danger-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6">
+                                        <path fill-rule="evenodd"
+                                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12ZM12 8.25a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75Zm0 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="font-bolder-700">1234567</td>
+                        <td class="font-bolder-700">25</td>
+                        <td>
+                            <div class="status-content">
+                                <div class="status  pending">Waiting/ قيد
+                                    الإنتظار
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="font-bolder-700">1234567</td>
+                        <td class="font-bolder-700">25</td>
+                        <td>
+                            <div class="status-content">
+                                <div class="status  pending">Waiting/ قيد
+                                    الإنتظار
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
+
+<img src="/images/search.png" alt>
