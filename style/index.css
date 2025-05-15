@@ -192,7 +192,7 @@ tr:nth-child(even) {
 /* header-two */
 .header-two {
   /* background-color: gainsboro; */
-  margin: -10px 0px 4px;
+  margin: -10px 0px 32px;
   display: flex;
   justify-content: space-between;
 }
